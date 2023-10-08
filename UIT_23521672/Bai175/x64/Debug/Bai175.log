@@ -1,0 +1,3 @@
+﻿  Bai175.cpp
+D:\NMLT\BaiTapMang1Chieu\UIT_23521672\Bai175\Bai175.cpp(11,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Bai175.vcxproj -> D:\NMLT\BaiTapMang1Chieu\UIT_23521672\x64\Debug\Bai175.exe
