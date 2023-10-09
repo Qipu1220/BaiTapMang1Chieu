@@ -1,6 +1,1 @@
-﻿  Bai170.cpp
-D:\NMLT\BaiTapMang1Chieu\UIT_23521672\Bai170\Bai170.cpp(33,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-D:\NMLT\BaiTapMang1Chieu\UIT_23521672\Bai170\Bai170.cpp(36,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-D:\NMLT\BaiTapMang1Chieu\UIT_23521672\Bai170\Bai170.cpp(50,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\NMLT\BaiTapMang1Chieu\UIT_23521672\Bai170\Bai170.cpp(52,6): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  Bai170.vcxproj -> D:\NMLT\BaiTapMang1Chieu\UIT_23521672\x64\Debug\Bai170.exe
+﻿
