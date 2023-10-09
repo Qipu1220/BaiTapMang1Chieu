@@ -3,6 +3,21 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
+void nhap(int a[], int& n);
+void xuat(int a[], int n);
+bool ktNguyenTo(int n);
+int ktTonTai(int a[], int n);
+
+int main()
+{
+	int b[100];
+	int k;
+	nhap(b, k);
+	cout << "Mang ban dau: \n";
+	xuat(b, k);
+	cout << "\nTon tai so nguyen to: \n" << ktTonTai(b, k);
+	return 0;
+}
 
 void nhap(int a[], int& n)
 {
@@ -43,16 +58,5 @@ int ktTonTai(int a[], int n)
 		if (ktNguyenTo(a[i]))
 			return +1;
 	}
-	return 0;
-}
-
-int main()
-{
-	int b[100];
-	int k;
-	nhap(b, k);
-	cout << "Mang ban dau: \n";
-	xuat(b, k);
-	cout << "\nTon tai so nguyen to: \n" << ktTonTai(b, k);
 	return 0;
 }

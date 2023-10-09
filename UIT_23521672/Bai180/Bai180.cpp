@@ -3,6 +3,21 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
+void nhap(int a[], int& n);
+void xuat(int a[], int n);
+int ktCon(int a[], int n, int vt, int l);
+int DemConTang(int a[], int n);
+
+int main()
+{
+	int b[100];
+	int k;
+	nhap(b, k);
+	cout << "Mang ban dau: \n";
+	xuat(b, k);
+	cout << "\nSo mang con tang: \n" << DemConTang(b, k);
+	return 0;
+}
 
 void nhap(int a[], int& n)
 {
@@ -44,15 +59,4 @@ int DemConTang(int a[], int n)
 		}
 	}
 	return dem;
-}
-
-int main()
-{
-	int b[100];
-	int k;
-	nhap(b, k);
-	cout << "Mang ban dau: \n";
-	xuat(b, k);
-	cout << "\nSo mang con tang: \n" << DemConTang(b, k);
-	return 0;
 }

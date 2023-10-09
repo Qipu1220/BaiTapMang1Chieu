@@ -3,6 +3,25 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
+void nhap(float a[], int& n);
+void xuat(float a[], int n);
+void hoanvi(float& a, float& b);
+void DuongTang(float a[], int n);
+void AmGiam(float a[], int n);
+void DuongTangAmGiam(float a[], int n);
+
+int main()
+{
+	float b[100];
+	int k;
+	nhap(b, k);
+	cout << "Mang ban dau: \n";
+	xuat(b, k);
+	DuongTangAmGiam(b, k);
+	cout << "\nMang duong tang am giam: \n";
+	xuat(b, k);
+	return 0;
+}
 
 void nhap(float a[], int& n)
 {
@@ -58,17 +77,4 @@ void DuongTangAmGiam(float a[], int n)
 {
 	DuongTang(a, n);
 	AmGiam(a, n);
-}
-
-int main()
-{
-	float b[100];
-	int k;
-	nhap(b, k);
-	cout << "Mang ban dau: \n";
-	xuat(b, k);
-	DuongTangAmGiam(b, k);
-	cout << "\nMang duong tang am giam: \n";
-	xuat(b, k);
-	return 0;
 }

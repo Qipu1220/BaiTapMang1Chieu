@@ -3,6 +3,21 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
+void nhap(float a[], int& n);
+void xuat(float a[], int n);
+float AmDau(float a[], int n);
+
+int main()
+{
+	float b[100];
+	int k;
+	nhap(b, k);
+	cout << "Mang ban dau: \n";
+	xuat(b, k);
+
+	cout << "\nGia tri am dau: \n" << AmDau(b, k);
+	return 0;
+}
 
 void nhap(float a[], int& n)
 {
@@ -29,18 +44,6 @@ float AmDau(float a[], int n)
 	{
 		if (a[i] < 0)
 			return a[i];
-		return 0;
 	}
-}
-
-int main()
-{
-	float b[100];
-	int k;
-	nhap(b, k);
-	cout << "Mang ban dau: \n";
-	xuat(b, k);
-	
-	cout << "\nGia tri am dau: \n" << AmDau(b, k);
 	return 0;
 }

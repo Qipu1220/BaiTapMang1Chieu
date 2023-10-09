@@ -3,7 +3,22 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
+void nhap(int a[], int& n);
+void xuat(int a[], int n);
+int ChanCuoi(int a[], int n);
 
+int main()
+{
+	int b[100];
+	int k;
+	nhap(b, k);
+	cout << "Mang ban dau: \n";
+	xuat(b, k);
+
+	cout << "\nGia tri chan cuoi: \n" << ChanCuoi(b, k);
+	return 0;
+
+}
 void nhap(int a[], int& n)
 {
 	cout << "nhap n: ";
@@ -29,18 +44,6 @@ int ChanCuoi(int a[], int n)
 	{
 		if (a[i]%2==0)
 			return a[i];
-		return -1;
 	}
-}
-
-int main()
-{
-	int b[100];
-	int k;
-	nhap(b, k);
-	cout << "Mang ban dau: \n";
-	xuat(b, k);
-
-	cout << "\nGia tri chan cuoi: \n" << ChanCuoi(b, k);
-	return 0;
+	return -1;
 }

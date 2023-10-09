@@ -1,1 +1,4 @@
-﻿
+﻿  Bai105.cpp
+D:\NMLT\BaiTapMang1Chieu\UIT_23521672\Bai105\Bai105.cpp(27,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\NMLT\BaiTapMang1Chieu\UIT_23521672\Bai105\Bai105.cpp(30,29): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Bai105.vcxproj -> D:\NMLT\BaiTapMang1Chieu\UIT_23521672\x64\Debug\Bai105.exe

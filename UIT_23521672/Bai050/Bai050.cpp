@@ -3,6 +3,20 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
+void nhap(int a[], int& n);
+void xuat(int a[], int n);
+int DemChan(int a[], int n);
+
+int main()
+{
+	int b[100];
+	int k;
+	nhap(b, k);
+	cout << "Mang ban dau: \n";
+	xuat(b, k);
+	cout << "\nSo luong gia tri chan: " << DemChan(b, k);
+	return 0;
+}
 
 void nhap(int a[], int& n)
 {
@@ -29,15 +43,4 @@ int DemChan(int a[], int n)
 			dem++;
 	}
 	return dem;
-}
-
-int main()
-{
-	int b[100];
-	int k;
-	nhap(b, k);
-	cout << "Mang ban dau: \n";
-	xuat(b, k);
-	cout << "\nSo luong gia tri chan: " << DemChan(b, k);
-	return 0;
 }

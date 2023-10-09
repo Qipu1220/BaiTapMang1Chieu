@@ -3,6 +3,25 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
+void nhap(int a[], int& n);
+void xuat(int a[], int n);
+int ktCon(int a[], int n, int vt, int l);
+void DuongDaiNhat(int a[], int n, int& vtd, int& vtc);
+
+int main()
+{
+	int b[100];
+	int k;
+	nhap(b, k);
+	cout << "Mang ban dau: \n";
+	xuat(b, k);
+	int m, n;
+	DuongDaiNhat(b, k, m, n);
+	cout << "\nMang duong dai nhat: \n";
+	for (int i = m; i <= n; i++)
+		cout << setw(8) << b[i];
+	return 0;
+}
 
 void nhap(int a[], int& n)
 {
@@ -48,19 +67,4 @@ void DuongDaiNhat(int a[], int n,int& vtd,int& vtc)
 		}
 	}
 	vtd = vtc = -1;
-}
-
-int main()
-{
-	int b[100];
-	int k;
-	nhap(b, k);
-	cout << "Mang ban dau: \n";
-	xuat(b, k);
-	int m, n;
-	DuongDaiNhat(b, k, m, n);
-	cout << "\nMang duong dai nhat: \n";
-	for (int i = m; i <= n; i++)
-		cout << setw(8) << b[i];
-	return 0;
 }

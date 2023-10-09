@@ -3,6 +3,23 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
+void nhap(int a[], int& n);
+void xuat(int a[], int n);
+void DaoMang(int a[], int n);
+void DaoChan(int a[], int n);
+
+int main()
+{
+	int b[100];
+	int k;
+	nhap(b, k);
+	cout << "Mang ban dau: \n";
+	xuat(b, k);
+	DaoChan(b, k);
+	cout << "\nMang dao chan: \n";
+	xuat(b, k);
+	return 0;
+}
 
 void nhap(int a[], int& n)
 {
@@ -54,17 +71,4 @@ void DaoChan(int a[], int n)
 		if (a[i] % 2 == 0)
 			a[i] = b[k++];
 	}
-}
-
-int main()
-{
-	int b[100];
-	int k;
-	nhap(b, k);
-	cout << "Mang ban dau: \n";
-	xuat(b, k);
-	DaoChan(b,k);
-	cout << "\nMang dao chan: \n";
-	xuat(b, k);
-	return 0;
 }
