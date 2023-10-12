@@ -3,6 +3,21 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
+void nhap(int a[], int& n);
+void xuat(int a[], int n);
+bool ktNguyenTo(int n);
+int DemSoNguyenTo(int a[], int n);
+
+int main()
+{
+	int b[100];
+	int k;
+	nhap(b, k);
+	cout << "Mang ban dau: \n";
+	xuat(b, k);
+	cout << "\nSo luong so nguyen to: " << DemSoNguyenTo(b, k);
+	return 0;
+}
 
 void nhap(int a[], int& n)
 {
@@ -42,15 +57,4 @@ int DemSoNguyenTo(int a[], int n)
 			dem++;
 	}
 	return dem;
-}
-
-int main()
-{
-	int b[100];
-	int k;
-	nhap(b, k);
-	cout << "Mang ban dau: \n";
-	xuat(b, k);
-	cout << "\nSo luong so nguyen to: " << DemSoNguyenTo(b, k);
-	return 0;
 }

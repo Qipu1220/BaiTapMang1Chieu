@@ -3,6 +3,21 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
+void nhap(int a[], int& n);
+void xuat(int a[], int n);
+int HangChuc(int n);
+int Tong(int a[], int n);
+
+int main()
+{
+	int b[100];
+	int k;
+	nhap(b, k);
+	cout << "Mang ban dau: \n";
+	xuat(b, k);
+	cout << "\nTong cac chu so hang chuc: " << Tong(b, k);
+	return 0;
+}
 
 void nhap(int a[], int& n)
 {
@@ -34,15 +49,4 @@ int Tong(int a[], int n)
 			tong += a[i];
 	}
 	return tong;
-}
-
-int main()
-{
-	int b[100];
-	int k;
-	nhap(b, k);
-	cout << "Mang ban dau: \n";
-	xuat(b, k);
-	cout << "\nTong cac chu so hang chuc: " << Tong(b, k);
-	return 0;
 }

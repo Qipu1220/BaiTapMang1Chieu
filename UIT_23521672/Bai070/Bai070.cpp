@@ -3,6 +3,29 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
+void nhap(int a[], int& n);
+void xuat(int a[], int n);
+int TanSuat(int a[], int n, int x);
+void lietke(int a[], int n, int b[], int m);
+
+int main()
+{
+	int b[100];
+	int k;
+	nhap(b, k);
+	cout << "Mang 1: \n";
+	xuat(b, k);
+
+	int m[100];
+	int n;
+	nhap(m, n);
+	cout << "\nMang 2: \n";
+	xuat(m, n);
+
+	cout << "\nCac gia tri chi xuat hien mot tong 2 mang la: \n";
+	lietke(b, k, m, n);
+	return 0;
+}
 
 void nhap(int a[], int& n)
 {
@@ -59,23 +82,4 @@ void lietke(int a[], int n, int b[], int m)
 		if (TanSuat(a, n, b[i]) == 0 && flag)
 			cout << setw(8) << b[i];
 	}
-}
-
-int main()
-{
-	int b[100];
-	int k;
-	nhap(b, k);
-	cout << "Mang 1: \n";
-	xuat(b, k);
-
-	int m[100];
-	int n;
-	nhap(m, n);
-	cout << "\nMang 2: \n";
-	xuat(m, n);
-
-	cout << "\nCac gia tri chi xuat hien mot tong 2 mang la: \n";
-	lietke(b, k, m, n);
-	return 0;
 }

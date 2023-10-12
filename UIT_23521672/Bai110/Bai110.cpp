@@ -3,6 +3,22 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
+void nhap(int a[], int& n);
+void xuat(int a[], int n);
+bool ktNguyenTo(int n);
+int LonNhat(int a[], int n);
+int TimGiaTri(int a[], int n);
+
+int main()
+{
+	int b[100];
+	int k;
+	nhap(b, k);
+	cout << "Mang ban dau: \n";
+	xuat(b, k);
+	cout << "\nSo nguyen to lon nhat: \n" << TimGiaTri(b, k);
+	return 0;
+}
 
 void nhap(int a[], int& n)
 {
@@ -53,15 +69,4 @@ int TimGiaTri(int a[], int n)
 	while (ktNguyenTo == 0)
 		lc++;
 	return lc;
-}
-
-int main()
-{
-	int b[100];
-	int k;
-	nhap(b, k);
-	cout << "Mang ban dau: \n";
-	xuat(b, k);
-	cout << "\nSo nguyen to lon nhat: \n" << TimGiaTri(b, k);
-	return 0;
 }

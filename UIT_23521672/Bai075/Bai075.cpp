@@ -3,6 +3,24 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
+void nhap(float a[], int& n);
+void xuat(float a[], int n);
+float XaNhat(float a[], int n, int x);
+
+int main()
+{
+	float b[100];
+	int k;
+	nhap(b, k);
+	cout << "Mang ban dau: \n";
+	xuat(b, k);
+	int x;
+	cout << "\nNhap x: ";
+	cin >> x;
+
+	cout << "\nXa gia tri x nhat: \n" << XaNhat(b, k, x);
+	return 0;
+}
 
 void nhap(float a[], int& n)
 {
@@ -32,19 +50,4 @@ float XaNhat(float a[], int n, int x)
 			lc = a[i];
 	}
 	return lc;
-}
-
-int main()
-{
-	float b[100];
-	int k;
-	nhap(b, k);
-	cout << "Mang ban dau: \n";
-	xuat(b, k);
-	int x;
-	cout << "\nNhap x: ";
-	cin >> x;
-
-	cout << "\nXa gia tri x nhat: \n" << XaNhat(b, k, x);
-	return 0;
 }

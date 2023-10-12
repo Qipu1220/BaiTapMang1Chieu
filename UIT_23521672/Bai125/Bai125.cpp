@@ -3,6 +3,20 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
+void nhap(float a[], int& n);
+void xuat(float a[], int n);
+int ktTang(float a[], int n);
+
+int main()
+{
+	float b[100];
+	int k;
+	nhap(b, k);
+	cout << "Mang ban dau: \n";
+	xuat(b, k);
+	cout << "\nMang co tang dan khong: \n" << ktTang(b, k);
+	return 0;
+}
 
 void nhap(float a[], int& n)
 {
@@ -32,15 +46,4 @@ int ktTang(float a[], int n)
 			flag = 0;
 	}
 	return flag;
-}
-
-int main()
-{
-	float b[100];
-	int k;
-	nhap(b, k);
-	cout << "Mang ban dau: \n";
-	xuat(b, k);
-	cout << "\nMang co tang dan khong: \n" << ktTang(b, k);
-	return 0;
 }

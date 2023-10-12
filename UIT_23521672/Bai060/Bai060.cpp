@@ -3,6 +3,20 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
+void nhap(float a[], int& n);
+void xuat(float a[], int n);
+int DemGiaTri(float a[], int n);
+
+int main()
+{
+	float b[100];
+	int k;
+	nhap(b, k);
+	cout << "Mang ban dau: \n";
+	xuat(b, k);
+	cout << "\nSo luong trai dau: " << DemGiaTri(b, k);
+	return 0;
+}
 
 void nhap(float a[], int& n)
 {
@@ -36,15 +50,4 @@ int DemGiaTri(float a[], int n)
 	if (a[n - 1] * a[n - 2] < 0)
 		dem++;
 	return dem;
-}
-
-int main()
-{
-	float b[100];
-	int k;
-	nhap(b, k);
-	cout << "Mang ban dau: \n";
-	xuat(b, k);
-	cout << "\nSo luong trai dau: " << DemGiaTri(b, k);
-	return 0;
 }
