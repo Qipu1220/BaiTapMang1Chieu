@@ -3,6 +3,26 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
+void nhap(int a[], int& n);
+void xuat(int a[], int n);
+int TanSuat(int a[], int n, int x);
+int ktThuoc(int a[], int n, int b[], int m);
+
+int main()
+{
+	int b[100];
+	int k;
+	nhap(b, k);
+	cout << "Mang 1: \n";
+	xuat(b, k);
+	int a[100];
+	int h;
+	nhap(a, h);
+	cout << "Mang 2: \n";
+	xuat(a, h);
+	cout << "\nMang 1 co thuoc mang 2 khong: \n" << ktThuoc(b, k, a, h);
+	return 0;
+}
 
 void nhap(int a[], int& n)
 {
@@ -43,20 +63,4 @@ int ktThuoc(int a[], int n, int b[], int m)
 			flag = 0;
 	}
 	return flag;
-}
-
-int main()
-{
-	int b[100];
-	int k;
-	nhap(b, k);
-	cout << "Mang 1: \n";
-	xuat(b, k);
-	int a[100];
-	int h;
-	nhap(a, h);
-	cout << "Mang 2: \n";
-	xuat(a, h);
-	cout << "\nMang 1 co thuoc mang 2 khong: \n" << ktThuoc(b, k,a,h);
-	return 0;
 }

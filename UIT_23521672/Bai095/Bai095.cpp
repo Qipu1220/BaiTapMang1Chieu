@@ -3,6 +3,22 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
+void nhap(int a[], int& n);
+void xuat(int a[], int n);
+bool ktHoanThien(int n);
+int HoanThienCuoi(int a[], int n);
+
+int main()
+{
+	int b[100];
+	int k;
+	nhap(b, k);
+	cout << "Mang ban dau: \n";
+	xuat(b, k);
+
+	cout << "\nSo hoan thien cuoi: \n" << HoanThienCuoi(b, k);
+	return 0;
+}
 
 void nhap(int a[], int& n)
 {
@@ -44,16 +60,4 @@ int HoanThienCuoi(int a[], int n)
 			return a[i];
 	}
 	return -1;
-}
-
-int main()
-{
-	int b[100];
-	int k;
-	nhap(b, k);
-	cout << "Mang ban dau: \n";
-	xuat(b, k);
-
-	cout << "\nSo hoan thien cuoi: \n" << HoanThienCuoi(b, k);
-	return 0;
 }

@@ -3,6 +3,25 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
+void nhap(int a[], int& n);
+void xuat(int a[], int n);
+bool ktNguyenTo(int n);
+void hoanvi(int& a, int& b);
+void NguyenToTang(int a[], int n);
+
+
+int main()
+{
+	int b[100];
+	int k;
+	nhap(b, k);
+	cout << "Mang ban dau: \n";
+	xuat(b, k);
+	NguyenToTang(b, k);
+	cout << "\nMang nguyen to tang dan: \n";
+	xuat(b, k);
+	return 0;
+}
 
 void nhap(int a[], int& n)
 {
@@ -53,17 +72,4 @@ void NguyenToTang(int a[], int n)
 				hoanvi(a[i], a[j]);
 		}
 	}
-}
-
-int main()
-{
-	int b[100];
-	int k;
-	nhap(b, k);
-	cout << "Mang ban dau: \n";
-	xuat(b, k);
-	NguyenToTang(b, k);
-	cout << "\nMang nguyen to tang dan: \n";
-	xuat(b, k);
-	return 0;
 }

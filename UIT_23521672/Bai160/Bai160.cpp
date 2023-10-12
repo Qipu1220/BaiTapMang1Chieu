@@ -3,6 +3,25 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
+void nhap(int a[], int& n);
+void xuat(int a[], int n);
+void XoaViTi(int a[], int& n, int k);
+
+int main()
+{
+	int b[100];
+	int k;
+	nhap(b, k);
+	cout << "Mang ban dau: \n";
+	xuat(b, k);
+	int m;
+	cout << "\nnhap phan tu xoa: ";
+	cin >> m;
+	XoaViTi(b, k, m);
+	cout << "\nMang sau khi xoa: \n";
+	xuat(b, k);
+	return 0;
+}
 
 void nhap(int a[], int& n)
 {
@@ -30,20 +49,4 @@ void XoaViTi(int a[], int& n,int k)
 		a[i] = a[i + 1];
 	}
 	n--;
-}
-
-int main()
-{
-	int b[100];
-	int k;
-	nhap(b, k);
-	cout << "Mang ban dau: \n";
-	xuat(b, k);
-	int m;
-	cout << "\nnhap phan tu xoa: ";
-	cin >> m;
-	XoaViTi(b, k, m);
-	cout << "\nMang sau khi xoa: \n";
-	xuat(b, k);
-	return 0;
 }

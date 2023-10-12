@@ -3,6 +3,24 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
+void nhap(float a[], int& n);
+void xuat(float a[], int n);
+void XayDung(float a[], int n, float b[], int& m);
+
+int main()
+{
+	float b[100];
+	int k;
+	nhap(b, k);
+	cout << "Mang 1: \n";
+	xuat(b, k);
+	float a[100];
+	int h;
+	XayDung(b, k, a, h);
+	cout << "\nMang 2 la: \n";
+	xuat(a, h);
+	return 0;
+}
 
 void nhap(float a[], int& n)
 {
@@ -38,19 +56,4 @@ void XayDung(float a[], int n, float b[], int& m)
 		b[i] = a[i - 1] + a[i + 1];
 	}
 	b[m - 1] = a[n - 2];
-}
-
-int main()
-{
-	float b[100];
-	int k;
-	nhap(b, k);
-	cout << "Mang 1: \n";
-	xuat(b, k);
-	float a[100];
-	int h;
-	XayDung(b, k, a, h);
-	cout << "\nMang 2 la: \n";
-	xuat(a, h);
-	return 0;
 }
