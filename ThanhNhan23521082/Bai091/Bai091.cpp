@@ -39,7 +39,7 @@ bool KTDX(int n)
 {
 	int t = n;
 	int dn = 0;
-	while (t != 0);
+	while (t != 0)
 	{
 		dn = dn * 10 + t % 10;
 		t = t / 10;

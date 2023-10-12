@@ -13,8 +13,11 @@ int main()
 	int k;
 	int l;
 	Nhap(b, k,"1");
+	Xuat(b, k, "1");
+	cout << endl;
 	Nhap(c, l,"2");
-	cout << "So lan mang nay xuat hien trong mang kia la: " << DemXuatHien(b, k, c, l);
+	Xuat(b, k, "2");
+	cout <<endl<< "So lan mang nay xuat hien trong mang kia la: " << DemXuatHien(b, k, c, l);
 	return 0;
 }
 

@@ -1,0 +1,2 @@
+﻿MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\ASUS\OneDrive\Tài liệu\GitHub\BaiTapMang1Chieu\ThanhNhan23521082\x64\Debug\Bai166.exe : fatal error LNK1120: 1 unresolved externals

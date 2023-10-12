@@ -5,7 +5,6 @@ void Nhap(int[], int&);
 void Xuat(int[], int);
 bool KTNT(int);
 int MaxNT(int[], int);
-int NguyenToDau(int[], int);
 
 int main()
 {
@@ -13,7 +12,7 @@ int main()
 	int k;
 	Nhap(b, k);
 	Xuat(b, k);
-	cout << "So nguyen to lon nhat la: " << MaxNT(b, k);
+	cout <<endl<< "So nguyen to lon nhat la: " << MaxNT(b, k);
 	return 0;
 }
 
@@ -39,7 +38,7 @@ void Xuat(int a[], int n)
 bool KTNT(int n)
 {
 	int dem = 0;
-	for (int i = 0; i < n; i++)
+	for (int i = 1; i <= n; i++)
 	{
 		if (n % i == 0)
 			dem++;
@@ -51,26 +50,12 @@ bool KTNT(int n)
 
 int MaxNT(int a[], int n)
 {
-	int lc = NguyenToDau(a, n);
-	if (lc == 0)
-		return 0;
+	int lc = 0;
 	for (int i = 0; i < n; i++)
 	{
 		if (KTNT(a[i]) && a[i] > lc)
 			lc = a[i];
 	}
 	return lc;
-}
-
-
-
-
-int NguyenToDau(int a[], int n)
-{
-	for (int i = 0; i < n; i++)
-	{
-		if (KTNT(a[i]))
-			return a[i];
-		return 0;
-	}
+	
 }
