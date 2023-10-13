@@ -1,11 +1,10 @@
 ﻿#include <iostream>
 #include <iomanip>
+#include <cstring>
 void Nhap(float[], int&);
 void Xuat(float[], int);
 void DaoMang(float[], int);
 void DaoDuong(float[], int);
-
-
 using namespace std;
 
 int main()
@@ -32,10 +31,10 @@ void Nhap(float a[], int& n)
 
 void Xuat(float a[], int n)
 {
-	cout << "Mang ";
+	cout << "Mang : ";
 	for (int i = 0; i < n; i++)
 	{
-		cout << setw(8) <<fixed<< setprecision(1)<< a[i];
+		cout << fixed << setw(8)<< setprecision(1)<< a[i];
 	}
 }
 
@@ -43,10 +42,9 @@ void DaoMang(float a[], int n)
 {
 	int c = 0;
 	int d = n - 1;
-	float temp = 0.0;
 	while (c < d)
 	{
-		temp = a[c];
+		float temp = a[c];
 		a[c] = a[d];
 		a[d] = temp;
 		c++;

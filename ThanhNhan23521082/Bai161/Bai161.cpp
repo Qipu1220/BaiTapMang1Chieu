@@ -40,8 +40,8 @@ void Xuat(float a[], int n, string x)
 void XoaViTri(float a[], int& n, int k)
 {
 	for (int i = k; i <= n - 2; i++)
-		a[i] = a[i + 1];
-	n--;
+		a[i] = a[i + 1]; // cho gia tri can xoa ra cuoi mang roi giam so phan tu
+	n--; 
 }
 
 void XoaAm(float a[], int& n)
@@ -50,3 +50,4 @@ void XoaAm(float a[], int& n)
 		if (a[i] < 0)
 			XoaViTri(a, n, i);
 }
+//debug de hieu
