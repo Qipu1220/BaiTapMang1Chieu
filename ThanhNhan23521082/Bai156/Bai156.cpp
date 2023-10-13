@@ -66,6 +66,7 @@ void DaoDuong(float a[], int n)
 		}
 	}
 	DaoMang(v, u); //Dao cac gia tri duong trong mang moi rut
+	u = 0;
 	// Nhap mang v vao lai mang a
 	for (int i = 0; i < n; i++)
 	{
