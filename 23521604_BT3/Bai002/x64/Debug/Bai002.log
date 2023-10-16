@@ -1,3 +1,0 @@
-﻿  Bai002.cpp
-C:\Users\quang\OneDrive\Máy tính\NMLT\23521604_BT3\Bai002\Bai002.cpp(21,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Bai002.vcxproj -> C:\Users\quang\OneDrive\Máy tính\NMLT\23521604_BT3\x64\Debug\Bai002.exe
